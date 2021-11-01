@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Gardner Grounds</title>
+</head>
+<body>
+    <section class="bg-dark p-3">
+        <section class="row mx-0 pb-3 bg-light">
+            <section class="col-sm-8">
+
+                <section class="card rounded-pill my-3">
+                    <section class="card-body">
+                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active rounded-pill" id="pills-specialtyItems-tab" data-bs-toggle="pill" data-bs-target="#pills-specialtyItems" type="button" role="tab" aria-controls="pills-specialtyItems" aria-selected="true">Specialty Drinks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-milkTea-tab" data-bs-toggle="pill" data-bs-target="#pills-milkTea" type="button" role="tab" aria-controls="pills-milkTea" aria-selected="false">Milk Tea Drinks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-bakery-tab" data-bs-toggle="pill" data-bs-target="#pills-bakery" type="button" role="tab" aria-controls="pills-bakery" aria-selected="false">Bakery</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-checkOut-tab" data-bs-toggle="pill" data-bs-target="#pills-checkOut" type="button" role="tab" aria-controls="pills-checkOut" aria-selected="false">Check Out</button>
+                      </li> -->
+                  </ul>
+                </section>
+            </section>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-specialtyItems" role="tabpanel" aria-labelledby="pills-specialtyItems-tab">
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Americano', 3.95)"><img draggable="false"
+                                img src="img/americano.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Americano</h5>
+                                  <p class="card-text fw-bold">$3.95</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card"  onclick="orderBasket('Pumpkin Spice Latte',3.95 )">
+                                <img draggable="false" img src="img/pumpkinspicelatte.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pumpkin Spice Latte</h5>
+                                  <p class="card-text fw-bold">$ 4.00</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Hot Chocolate',3.95)" ><img draggable="false"
+                                src="img/hotchocolate.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hot Chocolate</h5><p class="card-text fw-bold">$ 3.00</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Vietnamese Coffee',3.95)" ><img draggable="false"
+                                img src="img/vietcoffee.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Vietnamese Coffee</h5>
+                                  <p class="card-text fw-bold">$ 4.00/p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" onclick="orderBasket('Kopi Luwak',3.95)" >
+                                    <img draggable="false" img src="img/kopiluwak.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Kopi Luwak</h5>
+                                    <p class="card-text fw-bold">$ 3.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Cappuccino',3.95)" >
+                                    <img draggable="false" img src="img/cappuccino.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Cappuccino</h5>
+                                    <p class="card-text fw-bold">$ 3.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Espresso',1.95)" >
+                                    <img draggable="false" img src="img/espresso.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Espresso</h5>
+                                    <p class="card-text fw-bold">$ 3.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Mocha',3.95)" >
+                                    <img draggable="false" img src="img/icedmocha.jpeg" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Mocha</h5>
+                                    <p class="card-text fw-bold">$ 3.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-milkTea" role="tabpanel" aria-labelledby="pills-milkTea-tab">
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Green Tea Milk Tea',3.95)" >
+                                <img draggable="false" img src="img/greenteamilktea.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Green Tea Milk Tea</h5><p class="card-text fw-bold">$ 3.95</p>
+                                
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Original Milk Tea',3.95)" >
+                                <img draggable="false" img src="img/milktea.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Original Milk Tea</h5><p class="card-text fw-bold">$ 3.95</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Horchata Milk Tea',3.95)">
+                                <img draggable="false" img src="img/horchata.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Horchata Milk Tea</h5><p class="card-text fw-bold">$ 3.95</p>
+                                
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Oolong Milk Tea',4.95)">
+                                <img draggable="false" img src="img/oolongmilktea.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oolong Milk Tea</h5>
+                                    <p class="card-text fw-bold">$ 4.95</p>
+
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" onclick="orderBasket('Strawberry Milk Tea',4.95)">
+                                    <img draggable="false" img src="img/strawberrymilk.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Strawberry Milk Tea</h5>
+                                    <p class="card-text fw-bold">$ 4.95</p>
+                                    
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Wintermelon Milk Tea',4.95)">
+                                    <img draggable="false" img src="img/wintermelon.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Wintermelon Milk Tea</h5>
+                                    <p class="card-text fw-bold">$ 4.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Oreo Milk Tea',4.95)">
+                                    <img draggable="false" img src="img/oreomilktea.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Oreo Milk Tea</h5>
+                                    <p class="card-text fw-bold">$ 4.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Mango Milk Tea',4.95)">
+                                    <img draggable="false" img src="img/mango.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Mango Milk Tea</h5>
+                                    <p class="card-text fw-bold">$ 4.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                        
+                          </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-bakery" role="tabpanel" aria-labelledby="pills-bakery-tab">
+
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Pineapple Bun',2.95)">
+                                <img draggable="false" img src="img/pineapplebun.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                              <h5 class="card-title">Pineapple Bun</h5>
+                              <p class="card-text fw-bold">$ 2.95</p>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Coffee Cake',2.95)">
+                                <img draggable="false" img src="img/coffeecake.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                <h5 class="card-title">Coffee Cake</h5>
+                                <p class="card-text fw-bold">$ 2.95</p>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Chocolate Cookie',1.95)">
+                                <img draggable="false" img src="img/cookie.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                              <h5 class="card-title">Chocolate Cookie</h5>
+                              <p class="card-text fw-bold">$ 1.95</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" onclick="orderBasket('Croissant',2.95)">
+                                <img draggable="false" img src="img/croissant.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                              <h5 class="card-title">Croissant</h5>
+                              <p class="card-text fw-bold">$ 2.95</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" onclick="orderBasket('Muffin',2.95)">
+                                    <img draggable="false" img src="img/muffin.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <h5 class="card-title">Muffin</h5>
+                                  <p class="card-text fw-bold">$ 2.95</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Cinnamon Roll',2.95)">
+                                    <img draggable="false" img src="img/cinnamon.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <h5 class="card-title">Cinnamon Roll</h5>
+                                  <p class="card-text fw-bold">$ 2.95</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Macaroons',2.95)">
+                                    <img draggable="false" img src="img/Macaroons.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                <h5 class="card-title">Macaroons</h5>
+                                <p class="card-text fw-bold">$ 2.95</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card" onclick="orderBasket('Strawberry Danish',2.95)">
+                                    <img draggable="false" img src="img/danish.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <h5 class="card-title">Strawberry Danish</h5>
+                                  <p class="card-text fw-bold">$ 2.95</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <!-- <div class="tab-pane fade show active" id="pills-checkOut" role="tabpanel" aria-labelledby="pills-checkOut-tab">
+
+
+                        <div class="row mb-3">
+                            <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Customer Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class=" text-center form-control form-control-lg" id="customerName" placeholder="Customer Name" >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Customer Total</label>
+                            <div class="col-sm-8">
+                              <input type="number" step="0.01" class=" text-center form-control form-control-lg" id="customerAmount" placeholder="Amount"disabled>
+                            </div>
+                          </div>
+
+                          <button class=" mb-8 btn btn-primary btn-lg center w-50 rounded-pill">Submit</button>
+                    </div>
+                  </div> -->
+
+                  
+            </section>
+            <section class="col-sm-4">
+                <section class=" my-3 card">
+                    <section class="card-body">
+                        <h5 class="d-flex justify-content-between align-items-center"><span>Order</span><button onclick="clearOrderBasket()" class="btn btn-sm btn-danger rounded-pill">Clear</button></h5>
+                        <hr>
+                        <ul id="orderList" class="list-unstyled" style="height:50vh; overflow-y: auto;">
+                    
+                        </ul>
+                        <hr>
+                        <span>Customer Name: </span ><input id="customerName" type="text" input name="customerName" placeholder="Customer Name">
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Total Items:</span> <span id="totalItems" class='card-text'></span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Total Amount:</span><span class="fw-bold">$<span><span id="totalCost" class='card-text'>0.00</span></span>
+                            </li>
+
+                            <hr>
+                            <li>
+                                <a href="/barista"> <button id="checkOutButton" class="btn btn-primary btn-lg w-100 rounded-pill">Check Out</button></a>
+
+
+
+                            </li>
+                           
+                        </ul>
+                    
+                    </section>
+                </section>
+            </section>
+
+     
+     
+        </section>
+    </section>
+
+<script src ="main.js"></script>
+        
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
